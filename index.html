@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="OJT Team Portfolio — meet the team and explore five capstone JavaScript projects built during On-Job Training." />
+  <title>OJT Team Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <!-- Brand / team name -->
+      <a href="#hero" class="navbar__brand" aria-label="OJT Portfolio home">
+        OJT<span>.</span>Team
+      </a>
+
+      <!-- Center navigation links -->
+      <nav id="nav-links" aria-label="Primary navigation">
+        <a href="#team"     class="nav-link" id="nav-team">Team</a>
+        <a href="#projects" class="nav-link" id="nav-projects">Projects</a>
+        <a href="#contact"  class="nav-link" id="nav-contact">Contact</a>
+      </nav>
+
+      <!-- Right controls -->
+      <div class="navbar__controls">
+        <!-- Dark / light toggle -->
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          title="Toggle theme"
+        >🌙</button>
+
+        <!-- Mobile hamburger -->
+        <button
+          id="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >☰</button>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════════════════════════ -->
+    <section id="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">✦ On-Job Training Capstone</p>
+          <h1 class="hero__title" id="hero-heading">
+            We build<br /><em>real things.</em>
+          </h1>
+          <p class="hero__tagline">
+            Four developers. Five production-ready apps.
+            One shared mission: master modern JavaScript from the DOM up.
+          </p>
+          <div class="hero__cta">
+            <a href="#team" class="btn btn--primary" id="cta-meet-team">
+              Meet the Team
+            </a>
+            <a href="#projects" class="btn btn--outline" id="cta-view-projects">
+              View Projects
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TEAM
+    ══════════════════════════════════════════════════════════════ -->
+    <section id="team" class="section" aria-labelledby="team-heading">
+      <div class="container">
+        <p class="section-label">The Team</p>
+        <h2 class="section-title" id="team-heading">Meet the developers</h2>
+        <p class="section-sub">
+          Each member owns one or more apps in the capstone suite and
+          brings a unique speciality to the project.
+        </p>
+        <!-- Cards injected by render.js -->
+        <div id="team-grid" role="list" aria-label="Team members"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         PROJECTS
+    ══════════════════════════════════════════════════════════════ -->
+    <section id="projects" class="section" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="section-label">Capstone Apps</p>
+        <h2 class="section-title" id="projects-heading">Five live projects</h2>
+        <p class="section-sub">
+          Real apps, real code, real deployments — each covering a distinct
+          area of advanced JavaScript.
+        </p>
+        <!-- Cards injected by render.js -->
+        <div id="projects-grid" role="list" aria-label="Projects"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         CONTACT
+    ══════════════════════════════════════════════════════════════ -->
+    <section id="contact" class="section" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="section-label">Get in Touch</p>
+        <h2 class="section-title" id="contact-heading">Say hello</h2>
+
+        <div class="contact__layout">
+
+          <!-- Info column -->
+          <div class="contact__info">
+            <p>
+              Have questions about our work, want to collaborate, or just
+              want to talk JavaScript? We'd love to hear from you.
+            </p>
+            <p class="contact__detail">📍 On-Job Training Program</p>
+            <p class="contact__detail">💻 GitHub: @rushishinde01</p>
+          </div>
+
+          <!-- Form column -->
+          <div>
+            <form id="contact-form" novalidate aria-label="Contact form">
+
+              <!-- Name -->
+              <div class="form-group">
+                <label class="form-label" for="contact-name">Name</label>
+                <input
+                  class="form-input"
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  placeholder="Your name"
+                  autocomplete="name"
+                  aria-describedby="contact-name-error"
+                  aria-required="true"
+                />
+                <span class="form-error" id="contact-name-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label class="form-label" for="contact-email">Email</label>
+                <input
+                  class="form-input"
+                  type="email"
+                  id="contact-email"
+                  name="email"
+                  placeholder="you@example.com"
+                  autocomplete="email"
+                  aria-describedby="contact-email-error"
+                  aria-required="true"
+                />
+                <span class="form-error" id="contact-email-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label class="form-label" for="contact-message">Message</label>
+                <textarea
+                  class="form-input"
+                  id="contact-message"
+                  name="message"
+                  placeholder="Your message (min 10 characters)"
+                  aria-describedby="contact-message-error"
+                  aria-required="true"
+                ></textarea>
+                <span class="form-error" id="contact-message-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn--primary" id="contact-submit">
+                Send Message
+              </button>
+
+              <!-- Success message -->
+              <div
+                id="form-success"
+                class="form-success"
+                role="status"
+                aria-live="polite"
+              >
+                ✅ Message sent! We'll get back to you soon.
+              </div>
+
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════════ -->
+  <footer id="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <span class="footer__brand">OJT<span>.</span>Team</span>
+      <span class="footer__copy">&copy; 2025 OJT Capstone — All rights reserved.</span>
+    </div>
+  </footer>
+
+  <!-- ES module entry point — no inline JS in HTML -->
+  <script type="module" src="js/main.js"></script>
+
+</body>
+</html>
