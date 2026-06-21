@@ -43,34 +43,34 @@ const projects = [
     name: 'Interactive Quiz',
     description:
       'Multiple choice quiz with live scoring and immediate visual feedback.',
-    link: '#',
+    link: 'https://ojt-quiz.netlify.app',
     icon: '❓',
   },
   {
     name: 'Expense Tracker',
     description: 'Full CRUD finance logger with localStorage persistence.',
-    link: '#',
+    link: 'https://ojt-expense-2lfd-h9sqha1df-rushikesh8932-9402s-projects.vercel.app',
     icon: '💰',
   },
   {
     name: 'Live News Feed',
     description:
       'Live articles from NewsAPI with search and category filters.',
-    link: '#',
+    link: 'https://ojt-news-jrpqovl9s-rushikesh8932-9402s-projects.vercel.app',
     icon: '📰',
   },
   {
     name: 'GitHub Explorer',
     description:
       'Search GitHub profiles, repos, and language breakdowns.',
-    link: '#',
+    link: 'https://ojt-github-explorer-4lqqe1toa-rushikesh8932-9402s-projects.vercel.app',
     icon: '🐙',
   },
   {
     name: 'Kanban Board',
     description:
       'Drag-and-drop task board with full state persistence.',
-    link: '#',
+    link: 'https://ojt-kanban-4rxlc89bh-rushikesh8932-9402s-projects.vercel.app',
     icon: '📋',
   },
 ];
