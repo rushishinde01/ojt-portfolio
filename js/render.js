@@ -5,7 +5,7 @@
 const members = [
   {
     initials: 'RL',
-    name: 'Rushi (Team Lead)',
+    name: 'Rushikesh (Team Lead)',
     role: 'Portfolio',
     skills: ['DOM', 'Git', 'CSS'],
     github: 'https://github.com/rushishinde01',
@@ -13,26 +13,26 @@ const members = [
   },
   {
     initials: 'P2',
-    name: 'Person 2',
+    name: 'Roshan Bhendekar',
     role: 'Quiz · Expense',
     skills: ['State', 'CRUD', 'localStorage'],
-    github: '#',
+    github: 'https://github.com/roshanbhendekar',
     color: 'teal',
   },
   {
     initials: 'P3',
-    name: 'Person 3',
+    name: 'Arman Sheikh',
     role: 'News · GitHub API',
     skills: ['Async', 'API', 'Fetch'],
-    github: '#',
+    github: 'https://github.com/shaikharman8814-cloud',
     color: 'coral',
   },
   {
     initials: 'P4',
-    name: 'Person 4',
+    name: 'Satyam Yadav',
     role: 'Kanban Board',
     skills: ['DnD', 'State', 'Storage'],
-    github: '#',
+    github: 'https://github.com/satyamrakeshyaduvanshi',
     color: 'amber',
   },
 ];
@@ -43,34 +43,34 @@ const projects = [
     name: 'Interactive Quiz',
     description:
       'Multiple choice quiz with live scoring and immediate visual feedback.',
-    link: '#',
+    link: 'https://ojt-quiz1.netlify.app',
     icon: '❓',
   },
   {
     name: 'Expense Tracker',
     description: 'Full CRUD finance logger with localStorage persistence.',
-    link: '#',
+    link: 'https://dreamy-palmier-432381.netlify.app',
     icon: '💰',
   },
   {
     name: 'Live News Feed',
     description:
       'Live articles from NewsAPI with search and category filters.',
-    link: '#',
+    link: 'https://ojt-live-news.netlify.app',
     icon: '📰',
   },
   {
     name: 'GitHub Explorer',
     description:
       'Search GitHub profiles, repos, and language breakdowns.',
-    link: '#',
+    link: 'https://ojt-github-explorer.netlify.app',
     icon: '🐙',
   },
   {
     name: 'Kanban Board',
     description:
       'Drag-and-drop task board with full state persistence.',
-    link: '#',
+    link: 'https://ojt-kanban.netlify.app',
     icon: '📋',
   },
 ];
